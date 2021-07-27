@@ -1,0 +1,15 @@
+type Query {
+    optimizeWaypoints(directions: DirectionsInput!): Directions
+}
+
+type Directions {
+    origin: String!
+    destination: String!
+    waypoints: [String!]!
+}
+
+input DirectionsInput {
+    origin: String!
+    destination: String!
+    waypoints: [String!]!
+}
